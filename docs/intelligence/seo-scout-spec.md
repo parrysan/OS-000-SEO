@@ -4,7 +4,7 @@
 > Mac Studio** (same pattern as `research-video-inbox`: unattended cycle, dry-run before
 > commit). This file is the spec Hermes implements — it syncs via `~/OG/` so the Mac
 > Studio session can pick it up directly. Instance of the generic **intelligence loop**
-> (`~/OG/ai-os/skill-centres.md` §Intelligence loop) — clone for any centre by swapping
+> (`~/OG/dev/OS-000-AIOS/docs/skill-centres.md` §Intelligence loop) — clone for any centre by swapping
 > §Beat and §Assimilation targets.
 
 ## Cadence

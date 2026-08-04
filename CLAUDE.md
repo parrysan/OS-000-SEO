@@ -29,7 +29,7 @@ created: "2026-07-03"
 - **Revenue lane**: `4-aios`
 - **Autonomy mode**: `autopilot` — audits and monitoring cycles run end-to-end; Phil reviews at report and implementation-plan checkpoints.
 - **Skill centre**: `SEO/AEO` (code `seo`)
-- **Purpose** (one sentence): The **SEO/AEO Skill Centre** — the AIOS centre of excellence for organic findability: deep audits, AI-search/GEO/AEO readiness, implementation planning, and reporting, dispatchable per website/property for Oganiko's clients. Reference implementation of the skill-centre pattern (`~/OG/ai-os/skill-centres.md`).
+- **Purpose** (one sentence): The **SEO/AEO Skill Centre** — the AIOS centre of excellence for organic findability: deep audits, AI-search/GEO/AEO readiness, implementation planning, and reporting, dispatchable per website/property for Oganiko's clients. Reference implementation of the skill-centre pattern (`~/OG/dev/OS-000-AIOS/docs/skill-centres.md`).
 - **Last touched**: `2026-07-09` — full skill-registration audit: added `site-architecture`, registered `audit-website` (the crawl engine `squirrel` already referenced by name), added sxo-agent + e-commerce/multilingual/drift dispatch triggers
 
 ---
@@ -78,7 +78,7 @@ Markdown-first operating environment — skills, agents, templates, and per-prop
 ## Skills
 
 - **Front-door skill**: `og-seo-health-check` (global library) — domain URL → scored SEO/AEO readiness report against this centre's domain law
-- **Intelligence loop**: `docs/intelligence/` — seo-scout-spec.md (weekly Hermes cron, pending install) + notebooklm-standing-prompt.md (monthly LAW CHECK report); pattern generalized in `~/OG/ai-os/skill-centres.md` §Intelligence loop
+- **Intelligence loop**: `docs/intelligence/` — seo-scout-spec.md (weekly Hermes cron, pending install) + notebooklm-standing-prompt.md (monthly LAW CHECK report); pattern generalized in `~/OG/dev/OS-000-AIOS/docs/skill-centres.md` §Intelligence loop
 - **Project-local skills**: none — environment skills live in the global library (see design doc §Toolkit)
 - **Ecosystem skills** (installed globally, dispatched per design doc §3/§4): `seo-audit`, `ai-seo`, `programmatic-seo`, `site-architecture`, `seo` (addyosmani/web-quality-skills), `audit-website` (squirrelscan — the crawl engine `squirrel` referenced throughout §3/§4)
 - **claude-seo plugin specialists** (`/seo` commands + Agent-tool subagents, 25 skills/18 agents incl. `seo-sxo`, `seo-ecommerce`, `seo-hreflang`, `seo-drift` added 2026-07-09): full dispatch-profile table is `docs/seo-domain-design.md` §3, not duplicated here
