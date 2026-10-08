@@ -1,0 +1,11 @@
+# Payloads stay private even if someone force-adds the folder again.
+data/raw/**
+data/gsc/**
+data/crawls/**
+data/analytics/**
+reports/**
+!data/raw/README.md
+!data/gsc/README.md
+!data/crawls/README.md
+!data/analytics/README.md
+!reports/README.md

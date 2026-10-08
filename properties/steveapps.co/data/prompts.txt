@@ -1,0 +1,3 @@
+# Fixed AI prompt set — not written.
+# M3 waits until Steve commits to the Open SEO idea and Phil reviews the prompts.
+# Do not invent prompts. Share-of-answer needs a fixed set, measured later.
