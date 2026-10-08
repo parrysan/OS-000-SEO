@@ -45,7 +45,7 @@ created: "2026-07-03"
 | **Vault project page** | `Open-Memory-Vault/projects/OS-000-SEO/README.md` |
 | **GitHub repo** | https://github.com/parrysan/OS-000-SEO |
 | **Research store** | [OG-Research/OS-000-SEO](https://drive.google.com/drive/folders/1madR_jsEKKdni9R_E_3geGk0by_GrAb5) (`research/`, `assets/`, `deliverables/`) |
-| **External systems** | Google Search Console (per client, via `gws`), skills.sh registry |
+| **External systems** | Google Search Console (per client, via `gog`), skills.sh registry |
 
 ---
 
@@ -69,7 +69,7 @@ Markdown-first operating environment — skills, agents, templates, and per-prop
 
 ## Project-specific rules
 
-- **Client data is private.** `properties/` is gitignored — per-client crawl data, GSC exports, and reports never land in the public repo. Only the environment (skills, templates, docs) is versioned publicly.
+- **Client data is private.** `properties/` is gitignored — per-client crawl data, GSC exports, and reports never land in the public repo. Only the environment (skills, templates, docs) is versioned publicly. The dormant `properties/steveapps.co/` scaffold is force-tracked; it holds no measurements.
 - **Outputs must be actionable.** Every audit finding carries: evidence, impact/effort score, owner domain (content/design/dev), and a concrete fix. No generic advice.
 - **One engagement = one folder** under `properties/<domain>/` created from `templates/property/`.
 

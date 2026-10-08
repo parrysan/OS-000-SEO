@@ -55,6 +55,6 @@
 
 ## Access
 
-- **Google Search Console**: (property verified? access via `gws`? yes/no)
+- **Google Search Console**: (property verified? access via `gog`? yes/no)
 - **Analytics**: (GA4 / Plausible / none)
 - **Deploy path**: (repo + og-deploy / Shopify theme / client-managed)

@@ -70,6 +70,8 @@ OS-000-SEO/
 cross-client lessons and pattern decisions → vault via `/capture`; the environment
 definition → this repo (public).
 
+**steveapps.co scaffold (2026-10-08).** Captain decision D-1 force-tracks a dormant record at `properties/steveapps.co/`. Crawl data, Search Console exports, raw payloads, and reports stay gitignored. The record holds no measurements. Procedures sit beside `og-seo-health-check`: `og-seo-evidence`, `og-seo-research`, and `og-seo-cycle`. A paid or DataForSEO call requires the property budget policy and the captain's approval.
+
 **The context contract.** `properties/<domain>/context.md` is copied into the site's own
 repo as `.agents/product-marketing.md`. The installed ecosystem skills (`seo-audit`,
 `ai-seo`, `programmatic-seo`) read that file automatically before asking questions — the
@@ -97,7 +99,7 @@ indicator, and **drift monitoring** (dated snapshots diffed each cycle).
 | **onpage-optimizer** | Titles, metas, headings, content structure, extractability (definition-first, self-contained passages, Q&A blocks) | Crawl pages, `context.md`, target queries | Per-page fix list w/ rewritten elements | After audit; content refresh cycles |
 | **schema-agent** | Entity plumbing: Organization + sameAs, FAQPage, Product/Article/Person JSON-LD; NAP/entity coherence across pages | Site pages, business facts from `context.md` | Ready-to-paste JSON-LD + placement tickets | Audit flags weak entity; new site launch |
 | **ai-search-agent** | GEO/AEO layer: runs `ai-seo` skill; AI-crawler access, raw-HTML visibility, citation-worthiness, prompt-set baseline | `context.md`, `prompts.txt`, crawl | AI-readiness findings + share-of-answer baseline | Every diagnostic audit; monthly prompt-set run |
-| **gsc-analyst** | Pulls & reads Search Console via `gws`: striking-distance queries (pos 4–15 × impressions), decay, coverage errors | GSC property access | `data/gsc/` exports + opportunity table | Baseline; monthly cycle |
+| **gsc-analyst** | Pulls & reads Search Console via `gog`: striking-distance queries (pos 4–15 × impressions), decay, coverage errors | GSC property access | `data/gsc/` exports + opportunity table | Baseline; monthly cycle |
 | **content-gap-agent** | Query/competitor gap: what target audience asks that the site doesn't answer; commissions `deep-research` for SERP/competitor teardowns | `context.md`, GSC queries, competitor list | Prioritised content brief list | Strategy phase; quarterly |
 | **programmatic-seo-agent** | Runs `programmatic-seo` skill: when content-gap-agent finds a *repeatable* query pattern (`[service] in [city]`, `[product] vs [product]`) rather than one-off gaps, designs the template + data source + page-set plan | content-gap-agent's brief, `context.md` | Template spec + page-set plan → dev ticket | content-gap-agent flags a scalable pattern (not one-off) |
 | **internal-linking-agent** | Orphan pages, link equity to money pages, anchor quality | Crawl graph | Linking fix list (from → to → anchor) | After technical audit; after new content ships |
@@ -115,7 +117,7 @@ plan without evidence (URL + observed value).
 ### W1 — Engagement kickoff (once per property)
 1. **Intake** — paste `templates/kickoff-prompt.md` filled in.
 2. **Scaffold** — create `properties/<domain>/` from template; fill `context.md`; sync to site repo as `.agents/product-marketing.md`.
-3. **Access** — verify GSC via `gws`; note analytics + deploy path; write `prompts.txt` (25–100 fixed prompts from the search-intent map).
+3. **Access** — verify GSC via `gog`; note analytics + deploy path; write `prompts.txt` (25–100 fixed prompts from the search-intent map).
 4. **Baseline** — parallel: GSC export (gsc-analyst) + crawl (`squirrel`) + prompt-set run (ai-search-agent). Dated files into `data/`.
 
 ### W2 — Diagnostic audit
